@@ -15,7 +15,7 @@ const Conter = () => {
     useEffect( () => {
         setTimeout(() => {
         // fetch(`${process.env.REACT_APP_API_URL}manager/getAllmanagers`)
-        fetch('http://localhost:3000/api/centre/allCentres')
+        fetch('https://compagnedevaccinationcovid.herokuapp.com/api/centre/allCentres')
         .then(async response =>{
             
             const varr = await response.json()
@@ -34,7 +34,7 @@ const Conter = () => {
     useEffect( () => {
         setTimeout(() => {
         // fetch(`${process.env.REACT_APP_API_URL}manager/getAllmanagers`)
-        fetch('http://localhost:3000/api/ville/allCities')
+        fetch('https://compagnedevaccinationcovid.herokuapp.com/api/ville/allCities')
         .then(async response =>{
             
             const varr = await response.json()
@@ -70,7 +70,7 @@ const Conter = () => {
 
         console.log(form_data);
         setTimeout(() => {
-        axios.post('http://localhost:3000/api/centre/CreateCenter',form_data
+        axios.post('https://compagnedevaccinationcovid.herokuapp.com/api/centre/CreateCenter',form_data
             ).then(response => {
                 
                 if(response.data.result){

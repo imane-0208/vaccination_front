@@ -12,7 +12,7 @@ const HeaderDash = () => {
     localStorage.removeItem('auth_token')
       localStorage.removeItem('datau_user')
       navigate('/')
-    // axios.get('http://localhost:3000/api/logout')
+    // axios.get('https://compagnedevaccinationcovid.herokuapp.com/api/logout')
     // .then(response => {
     //   localStorage.removeItem('auth_token')
     //   localStorage.removeItem('datau_user')

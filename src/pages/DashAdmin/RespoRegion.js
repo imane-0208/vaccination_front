@@ -14,7 +14,7 @@ const RespoRegion = () => {
     useEffect( () => {
         setTimeout(() => {
         // fetch(`${process.env.REACT_APP_API_URL}manager/getAllmanagers`)
-        fetch('http://localhost:3000/api/resporegion/allRespos')
+        fetch('https://compagnedevaccinationcovid.herokuapp.com/api/resporegion/allRespos')
         .then(async response =>{
             
             const varr = await response.json()
@@ -61,7 +61,7 @@ const RespoRegion = () => {
         
         console.log(form_data);
         setTimeout(() => {
-        axios.post('http://localhost:3000/api/resporegion/allRespos',form_data
+        axios.post('https://compagnedevaccinationcovid.herokuapp.com/api/resporegion/allRespos',form_data
             ).then(response => {
                 
                 if(response.data.result){

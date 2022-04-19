@@ -131,7 +131,7 @@ export default function HorizontalLinearStepper() {
 
         console.log(form_data);
         setTimeout(() => {
-        axios.post('http://localhost:3000/api/user/store',form_data
+        axios.post('https://compagnedevaccinationcovid.herokuapp.com/api/user/store',form_data
             ).then(response => {
 
                 if(response.data.result){
